@@ -16,7 +16,7 @@ programa
  
         para (celsius = 10; celsius <= 100; celsius = celsius + 10)
         {
-            fahrenheit = (9.0 / 5.0) * celsius + 32
+                       fahrenheit =(celsius*9/5)+32
             escreva("Celsius: ", celsius, " °C  ->  Fahrenheit: ", fahrenheit, " °F\n")
         }
     }
