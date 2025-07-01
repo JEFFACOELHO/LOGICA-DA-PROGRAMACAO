@@ -8,20 +8,20 @@ programa
     //começando com os números 1, 1 o próximo termo é 1+1=2, o próximo será 1+2=3, 
     //o próximo é 2+3=5, o próximo 3+5=8, etc
 	
-	funcao inicio()
+funcao inicio()
 	{
-		inteiro termo1, termo2, proximo, contador
+		inteiro anterior, atual, proximo, contador
  
-        termo1 = 1
-        termo2 = 1
+        anterior = 1
+        atual = 1
  
         escreva("Série de Fibonacci até o 15º termo:\n")
-        escreva(termo1, ", ")
-        escreva(termo2, ", ")
+        escreva(anterior, ", ")
+        escreva(atual, ", ")
  
         para (contador = 3; contador <= 15; contador++)
         {
-            proximo = termo1 + termo2
+            proximo = anterior + atual
             escreva(proximo)
  
             // Para formatar com vírgula até o penúltimo termo
@@ -30,8 +30,8 @@ programa
                 escreva(", ")
             }
  
-            termo1 = termo2
-            termo2 = proximo
+            anterior = atual
+            atual = proximo
         }
  
         escreva("\n")
