@@ -1,0 +1,15 @@
+﻿ // Criar um programa que solicita senha ate que o usuario digite a correta, usando do while
+
+
+int senha = 1010;
+
+do
+{
+Console.WriteLine("Digite sua senha:");
+
+    if (senha == 1010)
+    {
+        Console.WriteLine("Acesso permitido!");
+    } 
+    while (senha != 1010)
+

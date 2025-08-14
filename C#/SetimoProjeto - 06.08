@@ -1,0 +1,19 @@
+﻿// Crie um programa que solicite a senha ate que o usuario digite a correta, usando do while
+
+int opcao;
+string senhaCorreta = "12345";
+string senhaDigitada;
+
+do
+{
+     Console.Write("Digite sua senha:");
+    senhaDigitada = Console.ReadLine();
+
+           
+    if (senhaCorreta != senhaDigitada)
+    {
+        Console.WriteLine($"Senha incorreta. Tente novamente.");
+    }
+}while (senhaDigitada != senhaCorreta);
+
+Console.WriteLine("Acesso permitido!");
